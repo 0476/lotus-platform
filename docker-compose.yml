@@ -1,0 +1,64 @@
+version: '2'
+services:
+  eureka-server:
+    image: ailikes/eureka-server:1.0.1
+    ports:
+      - "1111:1111"
+    restart: always
+    tty: true
+    container_name: eureka-server
+  auth-server:
+    image: ailikes/auth-server:1.0.1
+    ports:
+      - "8000:8000"
+    container_name: auth-server
+  auth-sso:
+    image: ailikes/auth-sso:1.0.1
+    ports:
+      - "9997:9997"
+    container_name: auth-sso
+  api-gateway:
+    image: ailikes/api-gateway:1.0.1
+    ports:
+      - "9200:9200"
+    container_name: api-gateway
+  user-center:
+    image: ailikes/user-center:1.0.1
+    ports:
+      - "7000:7000"
+    container_name: user-center
+  transaction-center:
+    image: ailikes/transaction-center:1.0.1
+    ports:
+      - "7970:7970"
+    container_name: transaction-center
+  sms-center:
+    image: ailikes/sms-center:1.0.1
+    ports:
+      - "4000:4000"
+    container_name: sms-center
+  log-center:
+    image: ailikes/log-center:1.0.1
+    ports:
+      - "5006:5006"
+    container_name: log-center
+  file-center:
+    image: ailikes/file-center:1.0.1
+    ports:
+      - "5000:5000"
+    container_name: file-center
+  batch-center:
+    image: ailikes/batch-center:1.0.1
+    ports:
+      - "5446:5446"
+    container_name: batch-center
+  admin-server:
+    image: ailikes/admin-server:1.0.1
+    ports:
+      - "9001:9001"
+    container_name: admin-server
+  back-center:
+    image: ailikes/back-center:1.0.1
+    ports:
+      - "8066:8066"
+    container_name: back-center

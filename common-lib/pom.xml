@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.ailikes.lotus</groupId>
+    <artifactId>lotus-platform</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>common-lib</artifactId>
+  <description>内部支撑工具</description>
+  <packaging>pom</packaging>
+  <modules>
+  	<!-- 数据库逻辑封装  -->
+  	<module>db-core</module>
+  	<!-- Model层，和部分工具类 -->
+  	<module>common-core</module>
+  	<!-- 资源服务器 -->
+  	<module>security-core</module>
+  	<!-- 日志格式-->
+  	<module>log-core</module>
+  	<!-- grpc引用 -->
+  	<module>grpc-core</module>
+  	<!-- 分布式锁 -->
+  	<module>lock-core</module>
+  	<!-- swagger引用 -->
+  	<module>swagger-core</module>
+  </modules>
+    <build>
+
+    </build>
+</project>
