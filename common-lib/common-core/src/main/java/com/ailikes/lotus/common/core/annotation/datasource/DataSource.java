@@ -1,4 +1,4 @@
-package com.ailikes.lotus.gateway.annotation.datasource;
+package com.ailikes.lotus.common.core.annotation.datasource;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

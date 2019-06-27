@@ -1,4 +1,4 @@
-package com.ailikes.lotus.gateway.autoconfigure.port.props;
+package com.ailikes.lotus.common.core.autoconfigure.port.props;
 
 import org.apache.commons.lang3.RandomUtils;
 

@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.cloud.netflix.zuul.filters.route.FallbackProvider;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -16,18 +18,15 @@ import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
 import com.netflix.hystrix.exception.HystrixTimeoutException;
 
-import lombok.extern.slf4j.Slf4j;
-
 /**
  * 自定义Zuul回退机制处理器。
  *
  * Provides fallback when a failure occurs on a route
  * 英文意思就是说提供一个回退机制当路由后面的服务发生故障时。
  */
-@Slf4j
 @Component
 public class GatewayFallbackProvider implements FallbackProvider {
-
+	private final Logger log = LoggerFactory.getLogger(getClass());
 	/**
      * 返回值表示需要针对此微服务做回退处理（该名称一定要是注册进入 eureka 微服务中的那个 serviceId 名称）；
      * 表明是为哪个微服务提供回退，*表示为所有微服务提供回退

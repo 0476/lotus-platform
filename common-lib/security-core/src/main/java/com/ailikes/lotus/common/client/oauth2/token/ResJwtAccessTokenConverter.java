@@ -11,8 +11,8 @@ import org.springframework.security.oauth2.provider.token.DefaultAccessTokenConv
 import org.springframework.security.oauth2.provider.token.DefaultUserAuthenticationConverter;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 
-import com.ailikes.lotus.gateway.model.system.LoginAppUser;
-import com.ailikes.lotus.gateway.model.system.SysRole;
+import com.ailikes.lotus.common.core.model.system.LoginAppUser;
+import com.ailikes.lotus.common.core.model.system.SysRole;
 
 import cn.hutool.core.bean.BeanUtil;
 

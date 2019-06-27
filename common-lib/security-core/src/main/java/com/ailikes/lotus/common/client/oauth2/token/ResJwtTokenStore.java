@@ -21,8 +21,7 @@ import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
-
-import com.ailikes.lotus.gateway.model.system.LoginAppUser;
+import com.ailikes.lotus.common.core.model.system.LoginAppUser;
 
  
 public class ResJwtTokenStore extends JwtTokenStore {

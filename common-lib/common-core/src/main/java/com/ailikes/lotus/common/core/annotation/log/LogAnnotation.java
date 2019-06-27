@@ -1,4 +1,4 @@
-package com.ailikes.lotus.gateway.annotation.log;
+package com.ailikes.lotus.common.core.annotation.log;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

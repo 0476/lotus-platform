@@ -1,4 +1,4 @@
-package com.ailikes.lotus.gateway.utils;
+package com.ailikes.lotus.common.core.utils;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

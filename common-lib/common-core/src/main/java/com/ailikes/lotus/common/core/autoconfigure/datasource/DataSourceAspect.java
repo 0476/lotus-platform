@@ -1,6 +1,6 @@
-package com.ailikes.lotus.gateway.autoconfigure.datasource;
+package com.ailikes.lotus.common.core.autoconfigure.datasource;
 
-import com.ailikes.lotus.gateway.annotation.datasource.DataSource;
+import com.ailikes.lotus.common.core.annotation.datasource.DataSource;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;

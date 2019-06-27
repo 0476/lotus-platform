@@ -1,9 +1,9 @@
-package com.ailikes.lotus.gateway.autoconfigure.port;
+package com.ailikes.lotus.common.core.autoconfigure.port;
 
 import org.springframework.boot.context.event.ApplicationEnvironmentPreparedEvent;
 import org.springframework.context.ApplicationListener;
 
-import com.ailikes.lotus.gateway.autoconfigure.port.props.RandomServerPortPropertySource;
+import com.ailikes.lotus.common.core.autoconfigure.port.props.RandomServerPortPropertySource;
 
 /**
  * 用于监听随机端口问题

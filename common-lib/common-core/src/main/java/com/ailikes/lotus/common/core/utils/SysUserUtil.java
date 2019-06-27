@@ -1,12 +1,11 @@
-package com.ailikes.lotus.gateway.utils;
+package com.ailikes.lotus.common.core.utils;
 
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.web.authentication.preauth.PreAuthenticatedAuthenticationToken;
-
-import com.ailikes.lotus.gateway.model.system.LoginAppUser;
+import com.ailikes.lotus.common.core.model.system.LoginAppUser;
 
 /**
  * @author ailikes

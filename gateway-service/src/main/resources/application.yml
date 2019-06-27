@@ -101,8 +101,7 @@ mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl 
   config-location: classpath:mybatis.cfg.xml
-  mapper-locations: classpath*:com/open/**/dao/*.xml  
-
+  mapper-locations: classpath*:com/ailikes/lotus/**/dao/*.xml
 
 security:
   oauth2:
@@ -188,63 +187,63 @@ zuul:
 #      path: /test163/**
 #      url: http://59.110.164.254:9999
     auth:
-      url: http://auth-server:8000/
+      url: http://auth-center:3333/
       path: /api-auth/**
-      service-id: auth-server 
+      service-id: auth-center 
       strip-prefix: true   
       custom-sensitive-headers: true  #http://blog.didispace.com/spring-cloud-zuul-cookie-redirect/ zuul授权码跳转问题
     auth-login-page:
-      url: http://auth-server:8000/
+      url: http://auth-center:3333/
       path: /login.html
-      service-id: auth-server
+      service-id: auth-center
       strip-prefix: true
       custom-sensitive-headers: true
     auth-css-process01:
-      url: http://auth-server:8000/
+      url: http://auth-center:3333/
       path: /css/import_main.css
-      service-id: auth-server
+      service-id: auth-center
       strip-prefix: true
       custom-sensitive-headers: true
     auth-css-process02:
-      url: http://auth-server:8000/
+      url: http://auth-center:3333/
       path: /css/page_all.css
-      service-id: auth-server
+      service-id: auth-center
       strip-prefix: true
       custom-sensitive-headers: true    
     auth-js-process01:
-      url: http://auth-server:8000/
+      url: http://auth-center:3333/
       path: /js/ld.min.js
-      service-id: auth-server
+      service-id: auth-center
       strip-prefix: true
       custom-sensitive-headers: true  
     auth-js-process02:
-      url: http://auth-server:8000/
+      url: http://auth-center:3333/
       path: /js/wrapper.js
-      service-id: auth-server
+      service-id: auth-center
       strip-prefix: true
       custom-sensitive-headers: true 
     auth-login-process:
-      url: http://auth-server:8000/
+      url: http://auth-center:3333/
       path: /user/login
-      service-id: auth-server
+      service-id: auth-center
       strip-prefix: true
       custom-sensitive-headers: true
     auth-login-token:
-      url: http://auth-server:8000/
+      url: http://auth-center:3333/
       path: /oauth/token
-      service-id: auth-server
+      service-id: auth-center
       strip-prefix: true
       custom-sensitive-headers: true  
     auth-login-authorize:
-      url: http://auth-server:8000/
+      url: http://auth-center:3333/
       path: /oauth/authorize
-      service-id: auth-server
+      service-id: auth-center
       strip-prefix: true
       custom-sensitive-headers: true
     auth-check-process:
-      url: http://auth-server:8000/
+      url: http://auth-center:3333/
       path: /oauth/check_token
-      service-id: auth-server
+      service-id: auth-center
       strip-prefix: true
       custom-sensitive-headers: true  
     user-center:
@@ -288,7 +287,7 @@ zuul:
           refresh-interval: 60
           type:
             - origin
-      auth-server:
+      auth-center:
         - limit: 10
           refresh-interval: 60
           type:
@@ -313,7 +312,7 @@ zuul:
 #  swagger-version: 2.0  
 #  resources:
 #    auth:
-#      name: auth-server
+#      name: auth-center
 #      api-docs-path: /auth/v2/api-docs
 #      swagger-version: 2.0
 #    client:
@@ -331,7 +330,7 @@ swagger:
     auto-generate-from-zuul-routes: true
     ignore-routes: auth-login-page,auth-login-process,auth-login-token,auth-login-authorize,auth-check-process,auth-css-process01,auth-css-process02,auth-js-process01,auth-js-process02
       
-#  generate-routes: auth-server, auth-client 
+#  generate-routes: auth-center, auth-client 
 
 logging:
   level:

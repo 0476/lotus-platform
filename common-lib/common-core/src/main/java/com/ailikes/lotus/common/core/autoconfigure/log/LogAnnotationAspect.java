@@ -1,4 +1,4 @@
-package com.ailikes.lotus.gateway.autoconfigure.log;
+package com.ailikes.lotus.common.core.autoconfigure.log;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -8,10 +8,9 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.ailikes.lotus.gateway.annotation.log.LogAnnotation;
-import com.ailikes.lotus.gateway.utils.SpringUtils;
-import com.ailikes.lotus.gateway.utils.SysUserUtil;
+import com.ailikes.lotus.common.core.annotation.log.LogAnnotation;
+import com.ailikes.lotus.common.core.utils.SpringUtils;
+import com.ailikes.lotus.common.core.utils.SysUserUtil;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -22,10 +21,10 @@ import org.springframework.core.annotation.Order;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.ailikes.lotus.gateway.log.service.LogService;
-import com.ailikes.lotus.gateway.log.service.impl.LogServiceImpl;
-import com.ailikes.lotus.gateway.model.log.SysLog;
-import com.ailikes.lotus.gateway.model.system.LoginAppUser;
+import com.ailikes.lotus.common.core.log.service.LogService;
+import com.ailikes.lotus.common.core.log.service.impl.LogServiceImpl;
+import com.ailikes.lotus.common.core.model.log.SysLog;
+import com.ailikes.lotus.common.core.model.system.LoginAppUser;
 
 /**
  * 保存日志

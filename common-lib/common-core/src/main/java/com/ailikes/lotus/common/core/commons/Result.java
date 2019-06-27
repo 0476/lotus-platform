@@ -1,4 +1,4 @@
-package com.ailikes.lotus.gateway.commons;
+package com.ailikes.lotus.common.core.commons;
 
 
 import java.io.Serializable;

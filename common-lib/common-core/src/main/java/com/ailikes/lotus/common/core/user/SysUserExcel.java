@@ -1,7 +1,6 @@
-package com.ailikes.lotus.gateway.easypoi.user;
+package com.ailikes.lotus.common.core.user;
 
 import cn.afterturn.easypoi.excel.annotation.Excel;
-import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;

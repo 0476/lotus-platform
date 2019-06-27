@@ -1,4 +1,4 @@
-package com.ailikes.lotus.gateway.props;
+package com.ailikes.lotus.common.core.props;
 
 import java.util.ArrayList;
 import java.util.List;

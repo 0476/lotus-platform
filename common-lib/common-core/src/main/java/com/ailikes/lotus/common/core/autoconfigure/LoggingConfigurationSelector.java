@@ -1,4 +1,4 @@
-package com.ailikes.lotus.gateway.autoconfigure;
+package com.ailikes.lotus.common.core.autoconfigure;
 
 import org.springframework.context.annotation.ImportSelector;
 import org.springframework.core.type.AnnotationMetadata;
@@ -15,8 +15,8 @@ public class LoggingConfigurationSelector implements ImportSelector {
 		// TODO Auto-generated method stub
 //		importingClassMetadata.getAllAnnotationAttributes(EnableEcho.class.getName());
 		return new String[] { 
-				"DataSourceAspect",
-				"LogAnnotationAspect"
+				"com.ailikes.lotus.common.core.autoconfigure.datasource.DataSourceAspect",
+				"com.ailikes.lotus.common.core.autoconfigure.log.LogAnnotationAspect"
 		};
 	}
 

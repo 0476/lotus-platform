@@ -1,0 +1,47 @@
+package com.ailikes.lotus.auth.server.service.impl;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.AuthenticationCredentialsNotFoundException;
+import org.springframework.security.authentication.DisabledException;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+
+import com.ailikes.lotus.common.core.model.system.LoginAppUser;
+import com.ailikes.lotus.auth.server.feign.UserClient;
+import com.ailikes.lotus.auth.server.feign.UserLoginGrpc;
+
+@Service
+public class UserDetailServiceImpl implements UserDetailsService {
+
+    private final Logger log = LoggerFactory.getLogger(getClass());
+
+    @Autowired
+    private UserClient userClient;
+    
+    @Autowired
+    private UserLoginGrpc userLoginGrpc;
+
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+
+//      后续考虑集成spring socail,支持多种类型登录
+        LoginAppUser loginAppUser = userClient.findByUsername(username);   			  //方式1  feign调用       对外feign resttemplate
+        
+//        LoginAppUser loginAppUser = userLoginGrpc.findByUsername(username);		  //方式2  gprc调用		对内grpc dubbo
+        if (loginAppUser == null) {
+            throw new AuthenticationCredentialsNotFoundException("用户不存在");
+        } else if (!loginAppUser.isEnabled()) {
+            throw new DisabledException("用户已作废");
+        }
+
+        return loginAppUser;
+    }
+
+
+     
+}

@@ -1,6 +1,6 @@
-package com.ailikes.lotus.gateway.log.dao;
+package com.ailikes.lotus.common.core.log.dao;
 
-import com.ailikes.lotus.gateway.model.log.SysLog;
+import com.ailikes.lotus.common.core.model.log.SysLog;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 

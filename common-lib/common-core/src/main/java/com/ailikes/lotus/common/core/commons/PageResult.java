@@ -1,4 +1,4 @@
-package com.ailikes.lotus.gateway.commons;
+package com.ailikes.lotus.common.core.commons;
 
 import java.io.Serializable;
 import java.util.List;
@@ -51,5 +51,30 @@ public class PageResult<T> implements Serializable {
 
 	public void setData(List<T> data) {
 		this.data = data;
+	}
+
+
+	public PageResult<T>  data(List<T> data){
+		this.data = data;
+		return this;
+	}
+
+
+	public PageResult<T>  code(int code){
+		this.code = code;
+		return this;
+	}
+
+	public PageResult<T>  count(Long count){
+		this.count = count;
+		return this;
+	}
+
+	public static <T> PageResult builder(){
+		return new PageResult<T>();
+	}
+
+	public PageResult<T> build(){
+		return this;
 	}
 }

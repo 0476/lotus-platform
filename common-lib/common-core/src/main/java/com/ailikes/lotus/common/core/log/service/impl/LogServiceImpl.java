@@ -1,11 +1,10 @@
-package com.ailikes.lotus.gateway.log.service.impl;
+package com.ailikes.lotus.common.core.log.service.impl;
 
 import java.util.Date;
-
-import com.ailikes.lotus.gateway.annotation.datasource.DataSource;
-import com.ailikes.lotus.gateway.log.dao.LogDao;
-import com.ailikes.lotus.gateway.log.service.LogService;
-import com.ailikes.lotus.gateway.model.log.SysLog;
+import com.ailikes.lotus.common.core.annotation.datasource.DataSource;
+import com.ailikes.lotus.common.core.log.dao.LogDao;
+import com.ailikes.lotus.common.core.log.service.LogService;
+import com.ailikes.lotus.common.core.model.log.SysLog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;

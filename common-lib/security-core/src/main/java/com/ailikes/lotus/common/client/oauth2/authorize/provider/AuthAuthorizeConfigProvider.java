@@ -1,7 +1,7 @@
 package com.ailikes.lotus.common.client.oauth2.authorize.provider;
 
 import com.ailikes.lotus.common.client.oauth2.authorize.AuthorizeConfigProvider;
-import com.ailikes.lotus.gateway.props.PermitUrlProperties;
+import com.ailikes.lotus.common.core.props.PermitUrlProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.core.annotation.Order;

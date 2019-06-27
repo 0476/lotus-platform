@@ -3,7 +3,7 @@ package com.ailikes.lotus.common.client;
 
 import javax.annotation.Resource;
 
-import com.ailikes.lotus.gateway.props.PermitUrlProperties;
+import com.ailikes.lotus.common.core.props.PermitUrlProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;

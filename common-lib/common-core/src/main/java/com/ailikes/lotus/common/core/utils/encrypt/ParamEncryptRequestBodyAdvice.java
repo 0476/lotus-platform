@@ -1,5 +1,5 @@
 
-package com.ailikes.lotus.gateway.utils.encrypt;
+package com.ailikes.lotus.common.core.utils.encrypt;
 
 import java.io.IOException;
 import java.io.InputStream;

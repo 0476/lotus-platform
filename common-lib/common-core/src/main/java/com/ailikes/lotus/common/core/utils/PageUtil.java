@@ -1,11 +1,11 @@
-package com.ailikes.lotus.gateway.utils;
+package com.ailikes.lotus.common.core.utils;
 
 import java.util.Map;
 
 import org.apache.commons.collections4.MapUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.util.CollectionUtils;
-
-import lombok.extern.slf4j.Slf4j;
 
  
 /**
@@ -14,9 +14,9 @@ import lombok.extern.slf4j.Slf4j;
 * 分页参数处理工具
 * url 地址重写 ?start=1&length=10
 */
-@Slf4j
 public class PageUtil {
 
+	private static final Logger log = LoggerFactory.getLogger(PageUtil.class);
 	/**
 	 * 分页参数，起始位置，从0开始
 	 */

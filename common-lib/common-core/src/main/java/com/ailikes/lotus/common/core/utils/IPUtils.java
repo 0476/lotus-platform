@@ -1,15 +1,15 @@
-package com.ailikes.lotus.gateway.utils;
+package com.ailikes.lotus.common.core.utils;
 
 import java.net.Inet4Address;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.util.Enumeration;
 
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-@Slf4j
 public class IPUtils {
-	
+    private static final Logger log = LoggerFactory.getLogger(IPUtils.class);
 	/**
      * 获取本机内网IP地址方法
      * @return

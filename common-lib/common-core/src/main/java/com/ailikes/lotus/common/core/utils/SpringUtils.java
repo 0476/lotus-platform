@@ -1,4 +1,4 @@
-package com.ailikes.lotus.gateway.utils;
+package com.ailikes.lotus.common.core.utils;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

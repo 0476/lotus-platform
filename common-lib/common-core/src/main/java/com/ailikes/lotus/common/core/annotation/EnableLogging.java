@@ -1,4 +1,4 @@
-package com.ailikes.lotus.gateway.annotation;
+package com.ailikes.lotus.common.core.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -6,7 +6,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import com.ailikes.lotus.gateway.autoconfigure.LoggingConfigurationSelector;
+import com.ailikes.lotus.common.core.autoconfigure.LoggingConfigurationSelector;
 import org.springframework.context.annotation.Import;
 
 

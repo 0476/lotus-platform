@@ -1,4 +1,4 @@
-package com.ailikes.lotus.gateway.model.system;
+package com.ailikes.lotus.common.core.model.system;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;

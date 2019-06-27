@@ -1,6 +1,6 @@
-package com.ailikes.lotus.gateway.log.service;
+package com.ailikes.lotus.common.core.log.service;
 
-import com.ailikes.lotus.gateway.model.log.SysLog;
+import com.ailikes.lotus.common.core.model.log.SysLog;
 
 public interface LogService {
 

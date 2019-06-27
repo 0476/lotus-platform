@@ -1,12 +1,12 @@
-package com.ailikes.lotus.gateway.autoconfigure.port.props;
+package com.ailikes.lotus.common.core.autoconfigure.port.props;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.env.PropertySource;
 import org.springframework.util.StringUtils;
 
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
 public class RandomServerPortPropertySource extends PropertySource<RandomServerPort> {
 
+	private final Logger log = LoggerFactory.getLogger(getClass());
 	/**
 	 * Name of the random {@link PropertySource}.
 	 */

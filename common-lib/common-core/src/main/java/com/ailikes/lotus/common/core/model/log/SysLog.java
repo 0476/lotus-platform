@@ -1,4 +1,4 @@
-package com.ailikes.lotus.gateway.model.log;
+package com.ailikes.lotus.common.core.model.log;
 
 import java.io.Serializable;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package com.ailikes.lotus.gateway.model.system;
+package com.ailikes.lotus.common.core.model.system;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
