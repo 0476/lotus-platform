@@ -238,14 +238,10 @@
 	</build>
 	
 	<modules>
-		<!-- 内部支撑工具 -->
-		<module>common-lib</module>
-		<!-- 注册中心 -->
-		<module>register-center</module>
-		<!-- 认证中心 -->
-		<module>auth-center</module>
-		<!-- 业务网关 -->
-		<module>gateway-service</module>
+		<!-- 公共服务 -->
+		<module>common-service</module>
+		<!--  业务服务 -->
+		<module>business-service</module>
 		<!-- 业务中心 -->
 		<!--<module>business-center</module>-->
 		<!-- 灰度发布中心 <module>gray-center</module> -->
@@ -253,7 +249,7 @@
 		<!-- 监控中心 -->
 		<!--<module>monitor-center</module>-->
 		<!-- spring cloud gateway -->
-		<!--<module>new-api-gateway</module>-->
+		<!--<module>new-gateway-center</module>-->
 		<!-- web页面门户 -->
 		<!--<module>web-portal</module>-->
 	</modules>

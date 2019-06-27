@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>lotus-platform</artifactId>
+        <groupId>com.ailikes.lotus</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>common-service</artifactId>
+    <packaging>pom</packaging>
+    <description>公共服务中心</description>
+    <modules>
+        <!-- 内部支撑工具 -->
+        <module>common-lib</module>
+        <!-- 注册中心 -->
+        <module>register-center</module>
+        <!-- 认证中心 -->
+        <module>auth-center</module>
+        <!-- 业务网关 -->
+        <module>gateway-center</module>
+        <!-- 业务中心 -->
+        <!--<module>business-center</module>-->
+        <!-- 灰度发布中心 <module>gray-center</module> -->
+        <!-- 调优中心 <module>tuning-center</module> -->
+        <!-- 监控中心 -->
+        <!--<module>monitor-center</module>-->
+        <!-- spring cloud gateway -->
+        <!--<module>new-gateway-center</module>-->
+        <!-- web页面门户 -->
+        <!--<module>web-portal</module>-->
+    </modules>
+</project>

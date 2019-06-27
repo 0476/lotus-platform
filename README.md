@@ -117,7 +117,7 @@ http://59.110.164.254:8066/login.html  admin/admin
  
 ocp灰度发布功能(参考dev分支) 
 a.先启动 register-center 注册中心的 eureka-server 注册服务  
-b.在启动 api-gateway 网关服务 
+b.在启动 gateway-center 网关服务 
 c.再启动 oauth-center 认证中心 oauth-server 认证服务 
 d.在启动 business-center 业务中心的 对应服务 user-center 
 d.启动gray-center的discovery-console  

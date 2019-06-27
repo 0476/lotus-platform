@@ -17,11 +17,11 @@ services:
     ports:
       - "9997:9997"
     container_name: auth-sso
-  api-gateway:
-    image: ailikes/api-gateway:1.0.1
+  gateway-center:
+    image: ailikes/gateway-center:1.0.1
     ports:
       - "9200:9200"
-    container_name: api-gateway
+    container_name: gateway-center
   user-center:
     image: ailikes/user-center:1.0.1
     ports:
