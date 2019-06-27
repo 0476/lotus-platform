@@ -1,9 +1,4 @@
-# [![Fork me on Gitee](https://gitee.com/owenwangwen/open-capacity-platform/widgets/widget_5.svg)](https://gitee.com/owenwangwen/open-capacity-platform)open-capacity-platform 微服务能力开放平台 
-[![star](https://gitee.com/owenwangwen/open-capacity-platform/badge/star.svg?theme=white)](https://gitee.com/owenwangwen/open-capacity-platform/stargazers)
-[![Fork me on Gitee](https://gitee.com/owenwangwen/open-capacity-platform/widgets/widget_6.svg)](https://gitee.com/owenwangwen/open-capacity-platform)
-[![fork](https://gitee.com/owenwangwen/open-capacity-platform/badge/fork.svg?theme=white)](https://gitee.com/owenwangwen/open-capacity-platform/members)
-
-简称ocp是基于layui+springcloud的企业级微服务框架(用户权限管理，配置中心管理，应用管理，....),其核心的设计目标是分离前后端，快速开发部署，学习简单，功能强大，提供快速接入核心接口能力，其目标是帮助企业搭建一套类似百度能力开放平台的框架；  
+基于layui+springcloud的企业级微服务框架(用户权限管理，配置中心管理，应用管理，....),其核心的设计目标是分离前后端，快速开发部署，学习简单，功能强大，提供快速接入核心接口能力，其目标是帮助企业搭建一套类似百度能力开放平台的框架；  
 - 基于layui前后端分离的企业级微服务架构  
 - 兼容spring cloud netflix & spring cloud alibaba  
 - 优化Spring Security内部实现，实现API调用的统一出口和权限认证授权中心  
@@ -15,30 +10,12 @@
 # **演示地址** #
 http://59.110.164.254:8066/login.html  admin/admin   
 
-
 # **监控演示** #
 <a target="_blank" href="http://106.13.3.200/verynginx/index.html">**实时监控**</a> 用户名/密码：verynginx/verynginx       
 <a target="_blank" href="http://106.13.3.200:3000/#">**grafana监控**</a> 用户名/密码：admin/1q2w3e4r    
 
 # 开发手册  
  [https://www.kancloud.cn/owenwangwen/open-capacity-platform/content](https://www.kancloud.cn/owenwangwen/open-capacity-platform/content)
-
-### 欢迎进群（大佬云集）
-`一键加群`
-<a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5JSjd5D"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="open-capacity-platform交流" title="open-capacity-platform交流"></a>        
-<table>
-	<tr>
-            <td><img src=https://images.gitee.com/uploads/images/2019/0604/143151_36a5c07e_869801.png "屏幕截图.png" />
-	</tr>
-</table>
-# 技术介绍  #
-<table>
-	<tr>
-		<td><img src="https://images.gitee.com/uploads/images/2019/0523/091013_fffdcf8b_869801.png "屏幕截图.png"></td>
-		<td><img src="https://images.gitee.com/uploads/images/2019/0531/151440_a763b84e_869801.png "屏幕截图.png" ></td>
-    </tr>
-	
-</table>
 
 # **功能介绍** #  
 - 统一安全认证中心

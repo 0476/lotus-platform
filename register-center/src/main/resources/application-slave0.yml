@@ -37,7 +37,7 @@ logging:
   level:
 #    root: INFO
     com.netflix: OFF
-    com.open.capacity: INFO  
+    com.ailikes.lotus: INFO
     org.hibernate: INFO
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
     org.hibernate.type.descriptor.sql.BasicExtractor: TRACE

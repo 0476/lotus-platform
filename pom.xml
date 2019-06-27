@@ -15,7 +15,6 @@
 		<hutool.version>4.1.13</hutool.version>
 		<kaptcha.version>0.0.9</kaptcha.version>
 		<swagger.version>2.9.2</swagger.version>
-		<core.version>1.0.0-SNAPSHOT</core.version>
 		<disruptor.version>3.4.1</disruptor.version>
 		<swagger.m.version>1.0.6</swagger.m.version>
 		<net-devh-grpc.version>2.0.1.RELEASE</net-devh-grpc.version>
@@ -33,6 +32,7 @@
         <docker.host>https://111.207.248.41:2376</docker.host>
         <docker.image.prefix>ailikes</docker.image.prefix>
         <docker.image.version>1.0.1</docker.image.version>
+		<core.version>1.0.0-SNAPSHOT</core.version>
 	</properties>
 
 
@@ -249,7 +249,7 @@
 		<!-- 认证中心 -->
 		<!--<module>oauth-center</module>-->
 		<!-- 业务网关 -->
-		<!--<module>api-gateway</module>-->
+		<module>api-gateway</module>
 		<!-- 业务中心 -->
 		<!--<module>business-center</module>-->
 		<!-- 灰度发布中心 <module>gray-center</module> -->

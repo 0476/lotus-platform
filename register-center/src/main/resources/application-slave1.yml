@@ -21,7 +21,7 @@ eureka:
 logging:
   level:
     root: INFO
-    com.open.capacity: INFO   
+    com.ailikes.lotus: INFO
     org.springframework.web: INFO
     org.hibernate: INFO
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE

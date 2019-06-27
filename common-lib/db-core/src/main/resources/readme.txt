@@ -68,7 +68,7 @@ logging:
     org.hibernate: INFO
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
     org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
-    com.open.capacity: DEBUG 
+    com.ailikes.lotus: DEBUG
 
 
 
