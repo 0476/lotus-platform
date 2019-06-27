@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ailikes.lotus.gateway.client.oauth2.token.RedisTemplateTokenStore;
+import com.ailikes.lotus.common.client.oauth2.token.RedisTemplateTokenStore;
 
 /**
  * @author ailikes
