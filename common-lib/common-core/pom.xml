@@ -10,6 +10,11 @@
 	<description>Model层，和部分工具类</description>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.ailikes.lotus</groupId>
+			<artifactId>common-base</artifactId>
+			<version>${core.version}</version>
+		</dependency>
 		<!-- 关系型和非关系型数据库配置 spring oauth db redis支持 -->
 		<dependency>
 			<groupId>com.ailikes.lotus</groupId>

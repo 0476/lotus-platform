@@ -9,20 +9,23 @@
   <description>内部支撑工具</description>
   <packaging>pom</packaging>
   <modules>
-  	<!-- 数据库逻辑封装  -->
-  	<module>db-core</module>
-  	<!-- Model层，和部分工具类 -->
-  	<module>common-core</module>
-  	<!-- 资源服务器 -->
-  	<module>security-core</module>
-  	<!-- 日志格式-->
-  	<module>log-core</module>
-  	<!-- grpc引用 -->
-  	<module>grpc-core</module>
-  	<!-- 分布式锁 -->
-  	<module>lock-core</module>
-  	<!-- swagger引用 -->
-  	<module>swagger-core</module>
+        <!-- 最底层公共模块  -->
+        <module>common-base</module>
+        <!-- 数据库逻辑封装  -->
+        <module>db-core</module>
+        <!-- Model层，和部分工具类 -->
+        <module>common-core</module>
+        <!-- 资源服务器 -->
+        <module>security-core</module>
+        <!-- 日志格式-->
+        <module>log-core</module>
+        <!-- grpc引用 -->
+        <module>grpc-core</module>
+        <!-- 分布式锁 -->
+        <module>lock-core</module>
+        <!-- swagger引用 -->
+        <module>swagger-core</module>
+
   </modules>
     <build>
 

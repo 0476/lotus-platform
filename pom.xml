@@ -249,7 +249,7 @@
 		<!-- 认证中心 -->
 		<!--<module>oauth-center</module>-->
 		<!-- 业务网关 -->
-		<module>api-gateway</module>
+		<module>gateway-service</module>
 		<!-- 业务中心 -->
 		<!--<module>business-center</module>-->
 		<!-- 灰度发布中心 <module>gray-center</module> -->
