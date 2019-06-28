@@ -151,7 +151,5 @@ https://gitee.com/owenwangwen/config-center
 阿波罗官方地址   
 https://github.com/ctripcorp/apollo  
 
-# Spring Cloud Alibaba 初探
-https://gitee.com/owenwangwen/open-capacity-platform/tree/alibaba
 
 
