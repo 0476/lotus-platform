@@ -36,8 +36,7 @@
         // 表单提交事件
         form.on('submit(eureka-form-submit)', function (data) {
             layer.load(2);
-            debugger ;
-            admin.req('api-eureka/eureka/apps/'+eureka.app+'/'+eureka.instanceId+"/metadata?tag="+data.field.tag, {}, function (data) {
+            admin.req('api-register/eureka/apps/'+eureka.app+'/'+eureka.instanceId+"/metadata?tag="+data.field.tag, {}, function (data) {
             	layer.closeAll('loading');
             	if (data.code == 200){
             		

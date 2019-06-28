@@ -36,7 +36,7 @@
 
 
         var renderTable = function () {
-            admin.req('api-eureka/eureka/apps', {}, function (data) {
+            admin.req('api-register/eureka/apps', {}, function (data) {
                 var applications = new Array();
                 for (var i = 0; i <  data.applications.application.length; i++) {
                     var instances = data.applications.application[i].instance;
@@ -86,7 +86,7 @@
             // http://eureka-server:1111/eureka/apps/AUTH-GATEWAY/auth-gateway:192.168.31.162:9200/status?value=UP
             		
             if(status == 'OUT_OF_SERVICE'){
-	            admin.req('api-eureka/eureka/apps/'+obj.elem.value+"/status?value="+status, {}, function (data) {
+	            admin.req('api-register/eureka/apps/'+obj.elem.value+"/status?value="+status, {}, function (data) {
 	                if (data.code == 200){
 	                    setTimeout(function (args) {
 	                        layer.closeAll('loading');
@@ -96,9 +96,9 @@
 	            }, 'PUT');
             }else if(status == 'UP'){
             	
-            	admin.req('api-eureka/eureka/apps/'+obj.elem.value+"/status", {}, function (data) {
+            	admin.req('api-register/eureka/apps/'+obj.elem.value+"/status", {}, function (data) {
 	                if (data.code == 200){
-	                	admin.req('api-eureka/eureka/apps/'+obj.elem.value+"/status?value="+status, {}, function (data) {
+	                	admin.req('api-register/eureka/apps/'+obj.elem.value+"/status?value="+status, {}, function (data) {
 	    	                if (data.code == 200){
 	    	                    setTimeout(function (args) {
 	    	                        layer.closeAll('loading');

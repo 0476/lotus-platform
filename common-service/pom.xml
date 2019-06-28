@@ -30,13 +30,10 @@
         <module>generator-center</module>
         <!-- 后台管理界面 -->
         <module>admin-web</module>
-        <!-- 灰度发布中心 <module>gray-center</module> -->
+        <!-- 灰度发布中心 -->
+        <!--<module>gray-center</module>-->
         <!-- 调优中心 <module>tuning-center</module> -->
         <!-- 监控中心 -->
-        <!--<module>monitor-center</module>-->
-        <!-- spring cloud gateway -->
-        <!--<module>new-gateway-center</module>-->
-        <!-- web页面门户 -->
-        <!--<module>web-portal</module>-->
+        <module>monitor-center</module>
     </modules>
 </project>
