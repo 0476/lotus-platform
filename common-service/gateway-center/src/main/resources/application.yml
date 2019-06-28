@@ -247,7 +247,7 @@ zuul:
       strip-prefix: true
       custom-sensitive-headers: true  
     user-center:
-      url: http://user-center:7000/
+      url: http://user-center:4444/
       path: /api-user/**
       service-id: user-center
       strip-prefix: true

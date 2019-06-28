@@ -18,8 +18,8 @@
         <module>auth-center</module>
         <!-- 业务网关 -->
         <module>gateway-center</module>
-        <!-- 业务中心 -->
-        <!--<module>business-center</module>-->
+        <!-- 用户中心中心 -->
+        <module>user-center</module>
         <!-- 灰度发布中心 <module>gray-center</module> -->
         <!-- 调优中心 <module>tuning-center</module> -->
         <!-- 监控中心 -->
