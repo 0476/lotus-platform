@@ -1,6 +1,6 @@
-FROM frolvlad/alpine-oraclejdk8
+FROM registry.cn-beijing.aliyuncs.com/ailikes_tools/alpine-openjdk8:latest
 VOLUME /tmp
-ADD zipkin-center-native.jar app.jar
+ADD ./target/zipkin-server.jar app.jar
 RUN sh -c 'touch /app.jar'
 EXPOSE 11008
 ENV JAVA_OPTS=""

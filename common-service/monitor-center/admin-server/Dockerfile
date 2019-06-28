@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-oraclejdk8
+FROM registry.cn-beijing.aliyuncs.com/ailikes_tools/alpine-openjdk8:latest
 VOLUME /tmp
 ADD ./target/admin-server.jar app.jar
 RUN sh -c 'touch /app.jar'

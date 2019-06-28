@@ -190,6 +190,13 @@
                         </resources>
                     </configuration>
                 </plugin>
+                <!-- maven打包跳过测试  -->
+                <plugin>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <configuration>
+                        <skipTests>true</skipTests>
+                    </configuration>
+                </plugin>
 			</plugins>
 		</pluginManagement>
 		<resources>
@@ -242,7 +249,7 @@
 		<module>common-service</module>
 		<!--  业务服务 -->
 		<module>business-service</module>
-		<!-- 业务中心 -->
+        <!-- 业务中心 -->
 		<!--<module>business-center</module>-->
 		<!-- 灰度发布中心 <module>gray-center</module> -->
 		<!-- 调优中心 <module>tuning-center</module> -->

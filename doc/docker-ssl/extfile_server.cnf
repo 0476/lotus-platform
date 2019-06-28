@@ -1,0 +1,2 @@
+extendedKeyUsage = serverAuth
+subjectAltName = DNS:docker.ailikes.com,IP:127.0.0.1,IP:139.199.125.165
