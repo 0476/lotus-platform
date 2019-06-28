@@ -154,11 +154,4 @@ https://github.com/ctripcorp/apollo
 # Spring Cloud Alibaba 初探
 https://gitee.com/owenwangwen/open-capacity-platform/tree/alibaba
 
-# 用户权益 #
-- 允许免费用于学习、毕设、公司项目、私活等。
-
-# 禁止事项 #
-- 代码50%以上相似度的二次开源。
-- 注意：若禁止条款被发现有权追讨9999的授权费。
-
 
