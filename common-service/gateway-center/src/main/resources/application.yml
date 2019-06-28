@@ -257,15 +257,15 @@ zuul:
       path: /api-file/**
       service-id: file-center  
       strip-prefix: true
-    sms-center:
-      url: http://sms-center:4000/
-      path: /api-sms/**
-      service-id: sms-center  
+    message-center:
+      url: http://message-center:5555/
+      path: /api-message/**
+      service-id: message-center
       strip-prefix: true
     register-center:
       url: http://register-center:1111/
-      path: /api-eureka/**
-      service-id: eureka-server
+      path: /api-register/**
+      service-id: register-center
       strip-prefix: true
     generator-center:
       url: http://generator-center:6503/
