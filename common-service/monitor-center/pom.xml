@@ -11,6 +11,6 @@
 
 	<modules>
 		<module>admin-server</module>
-		<module>zipkin-center</module>
+		<module>zipkin-server</module>
 	</modules>
 </project>

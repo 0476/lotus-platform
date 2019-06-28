@@ -1,64 +1,71 @@
 version: '2'
 services:
-  eureka-server:
-    image: ailikes/eureka-server:1.0.1
+  #注册中心
+  register-center:
+    image: ailikes/register-center:1.0.0
     ports:
       - "1111:1111"
     restart: always
     tty: true
     container_name: eureka-server
-  auth-server:
-    image: ailikes/auth-server:1.0.1
-    ports:
-      - "8000:8000"
-    container_name: auth-server
-  auth-sso:
-    image: ailikes/auth-sso:1.0.1
-    ports:
-      - "9997:9997"
-    container_name: auth-sso
+  #网关中心
   gateway-center:
-    image: ailikes/gateway-center:1.0.1
+    image: ailikes/gateway-center:1.0.0
     ports:
-      - "9200:9200"
+    - "2222:2222"
     container_name: gateway-center
+  #认证中心
+  auth-center:
+    image: ailikes/auth-center:1.0.0
+    ports:
+      - "3333:3333"
+    container_name: auth-server
+  #用户中心
   user-center:
-    image: ailikes/user-center:1.0.1
+    image: ailikes/user-center:1.0.0
     ports:
-      - "7000:7000"
+      - "4444:4444"
     container_name: user-center
-  transaction-center:
-    image: ailikes/transaction-center:1.0.1
+  #消息中心
+  message-center:
+    image: ailikes/message-center:1.0.0
     ports:
-      - "7970:7970"
-    container_name: transaction-center
-  sms-center:
-    image: ailikes/sms-center:1.0.1
-    ports:
-      - "4000:4000"
-    container_name: sms-center
-  log-center:
-    image: ailikes/log-center:1.0.1
-    ports:
-      - "5006:5006"
-    container_name: log-center
+      - "5555:5555"
+    container_name: message-center
+  #文件中心
   file-center:
-    image: ailikes/file-center:1.0.1
+    image: ailikes/file-center:1.0.0
     ports:
-      - "5000:5000"
+    - "7777:7777"
     container_name: file-center
-  batch-center:
-    image: ailikes/batch-center:1.0.1
+  #日志中心
+  log-center:
+    image: ailikes/log-center:1.0.0
     ports:
-      - "5446:5446"
-    container_name: batch-center
+      - "9999:9999"
+    container_name: log-center
+  #监控系统
   admin-server:
-    image: ailikes/admin-server:1.0.1
+    image: ailikes/admin-server:1.0.0
     ports:
-      - "9001:9001"
+      - "8888:8888"
     container_name: admin-server
-  back-center:
-    image: ailikes/back-center:1.0.1
+  #日志跟踪系统
+  zipkin-server:
+    image: ailikes/zipkin-server:1.0.0
+    ports:
+      - "11008:11008"
+    container_name: zipkin-server
+
+  #后台网页
+  admin-web:
+    image: ailikes/admin-web:1.0.0
     ports:
       - "8066:8066"
-    container_name: back-center
+    container_name: admin-web
+  #前台网页
+  front-web:
+    image: ailikes/front-web:1.0.0
+    ports:
+      - "8001:8001"
+    container_name: front-web
