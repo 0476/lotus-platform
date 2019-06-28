@@ -268,7 +268,7 @@ zuul:
       service-id: generator-center
       strip-prefix: true
     log-center:
-      url: http://log-center:6666/
+      url: http://log-center:9999/
       path: /api-log/**
       service-id: log-center
       strip-prefix: true

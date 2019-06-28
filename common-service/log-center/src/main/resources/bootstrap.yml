@@ -1,6 +1,6 @@
 #端口
 server:
-   port: 6666 #固定端口
+   port: 9999 #固定端口
 #服务名称
 spring:
   application:

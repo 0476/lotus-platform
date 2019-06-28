@@ -85,8 +85,8 @@ spring:
   #elasticsearch服务配置
   data:
     elasticsearch:
-      cluster-name:  elasticsearch
-      cluster-nodes: 106.13.3.200:9300
+      cluster-name:  docker-cluster
+      cluster-nodes: elasticsearch.ailikes.com:9300
       repositories:
         enabled: true
       properties:
