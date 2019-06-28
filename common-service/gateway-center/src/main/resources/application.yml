@@ -252,11 +252,6 @@ zuul:
       service-id: user-center
       strip-prefix: true
       custom-sensitive-headers: true  #http://blog.didispace.com/spring-cloud-zuul-cookie-redirect/ zuul授权码跳转问题
-    file-center:
-      url: http://file-center:5000/
-      path: /api-file/**
-      service-id: file-center  
-      strip-prefix: true
     message-center:
       url: http://message-center:5555/
       path: /api-message/**
@@ -273,10 +268,15 @@ zuul:
       service-id: generator-center
       strip-prefix: true
     log-center:
-      url: http://log-center:5006/
+      url: http://log-center:6666/
       path: /api-log/**
       service-id: log-center
-      strip-prefix: true     
+      strip-prefix: true
+    file-center:
+      url: http://file-center:7777/
+      path: /api-file/**
+      service-id: file-center
+      strip-prefix: true
   ssl-hostname-validation-enabled: false
   ratelimit:
     enabled: false  #默认不限流

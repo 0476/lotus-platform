@@ -15,11 +15,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.alibaba.fastjson.JSON;
 
 /**
- * @author: [zhangzhiguang]
- * @Date: [2018-08-24 20:38]
- * @Description: [ ]
- * @Version: [1.0.0]
- * @Copy: [com.zzg]
+ * @author: ailikes
+ * @Version: 1.0.0
  */
 @Controller
 @RequestMapping("/redis")
