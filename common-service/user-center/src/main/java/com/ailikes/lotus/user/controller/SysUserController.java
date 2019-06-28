@@ -35,7 +35,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author 作者 owen E-mail: 624191343@qq.com
+ * @author ailikes
 * @version 创建时间：2017年11月12日 上午22:57:51
  *用户
  */
@@ -206,7 +206,8 @@ public class SysUserController {
      *  修改用户状态
      * @param params
      * @return
-     * @author gitgeek
+     * @author ailikes
+     * @version 1.0.0
      */
     @ApiOperation(value = "修改用户状态")
     @GetMapping("/users/updateEnabled")
@@ -227,7 +228,8 @@ public class SysUserController {
     /**
      * 管理后台，给用户重置密码
      * @param id
-     * @author gitgeek
+     * @author ailikes
+     * @version 1.0.0
      */
     @PreAuthorize("hasAuthority('user:post/users/{id}/resetPassword' )")
     @PostMapping(value = "/users/{id}/resetPassword")

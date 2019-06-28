@@ -19,7 +19,7 @@ import com.ailikes.lotus.file.oss.utils.FileUtil;
 
 
 /**
- * @author 作者 owen E-mail: 624191343@qq.com
+ * @author ailikes
  * @version 创建时间：2017年11月12日 上午22:57:51
  * AbstractFileService 抽取类
  * 根据filetype 实例化具体oss对象

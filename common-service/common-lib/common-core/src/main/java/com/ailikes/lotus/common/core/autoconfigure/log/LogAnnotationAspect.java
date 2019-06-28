@@ -29,7 +29,7 @@ import com.ailikes.lotus.common.core.model.system.LoginAppUser;
 /**
  * 保存日志
  * 
- * @author owen
+ * @author ailikes
  * @create 2017年7月2日
  */
 @Aspect

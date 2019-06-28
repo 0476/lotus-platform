@@ -6,7 +6,8 @@ import org.springframework.stereotype.Repository;
 import com.ailikes.lotus.log.es.entity.LogDocument;
 
 /**
- * @author zlt
+ * @author ailikes
+ * @version 1.0.0
  */
 @Repository
 public interface EsLogDao extends ElasticsearchRepository<LogDocument, String> {

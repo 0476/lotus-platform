@@ -6,11 +6,8 @@ import java.util.Date;
 /**
  * 时间工具类
  *
- * @Author: [dawei QQ:64738479]
- * @Date: [2019-04-25 21:48]
- * @Description: [ ]
- * @Version: [1.0.1]
- * @Copy: [com.zzg]
+ * @author ailikes
+ * @version 1.0.0
  */
 public class DateUtils {
 	/** 时间格式(yyyy-MM-dd) */

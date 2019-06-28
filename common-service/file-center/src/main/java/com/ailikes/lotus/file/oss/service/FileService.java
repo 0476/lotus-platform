@@ -8,7 +8,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.ailikes.lotus.file.oss.model.FileInfo;
 
 /**
- * @author 作者 owen E-mail: 624191343@qq.com
+ * @author ailikes
  * @version 创建时间：2017年11月12日 上午22:57:51
  * 文件service 目前仅支持阿里云oss,七牛云
 */

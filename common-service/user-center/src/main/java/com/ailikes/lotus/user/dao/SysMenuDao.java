@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Select;
 
 import com.ailikes.lotus.common.core.model.system.SysMenu;
 /**
-* @author 作者 owen E-mail: 624191343@qq.com
+* @author ailikes
 * @version 创建时间：2017年11月13日 上午22:57:51
  * 菜单
  */

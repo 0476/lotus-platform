@@ -35,7 +35,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ailikes.lotus.auth.server.handler.OauthLogoutHandler;
 
 /**
- * @author owen 624191343@qq.com
+ * @author ailikes
  * @version 创建时间：2017年11月12日 上午22:57:51
  */
 @Component

@@ -17,8 +17,8 @@ import com.ailikes.lotus.auth.server.service.ValidateCodeService;
 
 
 /**
- * @author zlt
- * @date 2018/12/10
+ * @author ailikes
+ * @version 1.0.0
  */
 @Service
 public class ValidateCodeServiceImpl implements ValidateCodeService {

@@ -17,8 +17,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @author keets
- * @date 2017/10/17
+ * @author ailikes
+ * @version 1.0.0
  */
 public class OauthLogoutHandler implements LogoutHandler {
 

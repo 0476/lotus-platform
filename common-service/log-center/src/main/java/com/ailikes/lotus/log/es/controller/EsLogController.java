@@ -28,7 +28,8 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 /**
- * @author zlt
+ * @author ailikes
+ * @version 1.0.0
  */
 @RestController
 public class EsLogController {

@@ -3,7 +3,7 @@ package com.ailikes.lotus.common.config.util;
 /**
  * 数据源定义
  *
- * @author owen
+ * @author ailikes
  * @create 2017年7月2日
  */
 public enum DataSourceKey {

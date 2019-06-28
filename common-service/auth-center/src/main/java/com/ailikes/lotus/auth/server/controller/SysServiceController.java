@@ -28,7 +28,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
 /**
- * @Author: [gitgeek]
+ * @author: [gitgeek]
  * @Date: [2018-08-23 16:20]
  * @Description: [ ]
  * @Version: [1.0.0]

@@ -4,11 +4,8 @@ package com.ailikes.lotus.common.core.commons;
 import java.io.Serializable;
 
 /**
- * @Author: [zhangzhiguang]
- * @Date: [2018-08-01 23:39]
- * @Description: [ ]
- * @Version: [1.0.0]
- * @Copy: [com.zzg]
+ * @author ailikes
+ * @version 1.0.0
  */
 public class Result<T> implements Serializable {
 

@@ -2,8 +2,8 @@
 *
 *  Base64 encode / decode
 *
-*  @author haitao.tu
-*  @date   2010-04-26
+* @author ailikes
+* @version 1.0.0
 *  @email  tuhaitao@foxmail.com
 *
 */

@@ -7,7 +7,7 @@ import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.oauth2.provider.code.RandomValueAuthorizationCodeServices;
 
 /**
- * @author owen 624191343@qq.com
+ * @author ailikes
  * @version 创建时间：2017年11月12日 上午22:57:51
  * JdbcAuthorizationCodeServices替换
  */

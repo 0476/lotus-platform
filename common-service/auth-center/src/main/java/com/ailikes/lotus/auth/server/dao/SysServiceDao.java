@@ -10,11 +10,8 @@ import org.apache.ibatis.annotations.Select;
 import com.ailikes.lotus.auth.server.model.SysService;
 
 /**
- * @Author: [gitgeek]
- * @Date: [2018-08-23 12:11]
- * @Description: [ ]
- * @Version: [1.0.0]
- * @Copy: [com.zzg]
+ * @author ailikes
+ * @version 1.0.0
  */
 @Mapper
 public interface SysServiceDao {

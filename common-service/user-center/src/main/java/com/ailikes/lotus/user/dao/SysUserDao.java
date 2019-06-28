@@ -13,7 +13,7 @@ import com.ailikes.lotus.common.core.model.system.SysPermission;
 import com.ailikes.lotus.common.core.model.system.SysUser;
 
 /**
-* @author 作者 owen E-mail: 624191343@qq.com
+* @author ailikes
 * @version 创建时间：2017年11月12日 上午22:57:51
  * 用户管理
  */

@@ -1,11 +1,8 @@
 package com.ailikes.lotus.common.core.model.system;
 
 /**
- * @Author: [gitgeek]
- * @Date: [2018-08-06 21:29]
- * @Description: [ ]
- * @Version: [1.0.0]
- * @Copy: [com.zzg]
+ * @author ailikes
+ * @version 1.0.0
  */
 public class SysUserRole {
 

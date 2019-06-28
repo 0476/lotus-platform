@@ -3,11 +3,8 @@ package com.ailikes.lotus.register.config;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @Author: [zhangzhiguang]
- * @Date: [2018-08-30 23:48]
- * @Description: [ ]
- * @Version: [1.0.0]
- * @Copy: [com.zzg]
+ * @author ailikes
+ * @version 1.0.0
  */
 @Configuration
 public class CorsConfig  {

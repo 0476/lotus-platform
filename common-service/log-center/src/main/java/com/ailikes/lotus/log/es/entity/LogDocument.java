@@ -9,8 +9,8 @@ import java.util.Date;
 
 /**
  * 日志对象
- *
- * @author zlt
+ * @author ailikes
+ * @version 1.0.0
  */
 @Document(indexName = "filebeat-sys-log", type = "doc")
 public class LogDocument implements Serializable {

@@ -3,8 +3,8 @@ package com.ailikes.lotus.auth.server.service;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author zlt
- * @date 2018/12/10
+ * @author ailikes
+ * @version 1.0.0
  */
 public interface ValidateCodeService {
     /**

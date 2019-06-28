@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * spring动态数据源（需要继承AbstractRoutingDataSource）
  *
- * @author owen
+ * @author ailikes
  * @create 2017年7月2日
  */
 public class DynamicDataSource extends AbstractRoutingDataSource {

@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 
 /**
  * 数据源选择
- * @author owen
+ * @author ailikes
  * @create 2017年7月2日
  */
 @Target({ElementType.METHOD, ElementType.TYPE})

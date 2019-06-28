@@ -1,7 +1,7 @@
 package com.ailikes.lotus.file.oss.model;
 
 /**
- * @author 作者 owen E-mail: 624191343@qq.com
+ * @author ailikes
  * @version 创建时间：2017年11月12日 上午22:57:51
  * 仅支持阿里云 oss ,七牛云等
 */

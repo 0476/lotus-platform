@@ -10,7 +10,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 
 /**
- * @author 作者 owen E-mail: 624191343@qq.com
+ * @author ailikes
 * @version 创建时间：2017年11月12日 上午22:57:51
  * 线程池配置、启用异步
  * @Async quartz 需要使用

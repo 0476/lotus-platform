@@ -27,7 +27,7 @@ import org.springframework.security.oauth2.provider.token.TokenStore;
 import com.ailikes.lotus.common.core.model.system.LoginAppUser;
 
 /**
- * @author owen 624191343@qq.com
+ * @author ailikes
  * @version 创建时间：2017年11月12日 上午22:57:51 类说明 redis集群存储token
  */
 

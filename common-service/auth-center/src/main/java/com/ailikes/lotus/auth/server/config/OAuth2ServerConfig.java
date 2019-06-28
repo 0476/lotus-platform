@@ -37,7 +37,7 @@ import com.ailikes.lotus.auth.server.service.RedisClientDetailsService;
 import com.ailikes.lotus.auth.server.token.RedisTemplateTokenStore;
 
 /**
- * @author owen 624191343@qq.com
+ * @author ailikes
  * @version 创建时间：2017年11月12日 上午22:57:51
  */
 @Configuration
@@ -67,7 +67,7 @@ public class OAuth2ServerConfig {
     }
 
     /**
-     * @author owen 624191343@qq.com
+     * @author ailikes
      * @version 创建时间：2017年11月12日 上午22:57:51 默认token存储在内存中
      * DefaultTokenServices默认处理
      */

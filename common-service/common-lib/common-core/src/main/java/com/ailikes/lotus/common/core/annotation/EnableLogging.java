@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Import;
 
 /**
  * 启动日志框架支持
- * @author owen
+ * @author ailikes
  * @create 2017年7月2日
  */
 

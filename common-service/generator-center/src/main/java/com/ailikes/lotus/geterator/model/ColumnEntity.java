@@ -2,11 +2,8 @@ package com.ailikes.lotus.geterator.model;
 
 
 /**
- * @Author: [dawei QQ:64738479]
- * @Date: [2019-04-25 21:48]
- * @Description: [ ]
- * @Version: [1.0.1]
- * @Copy: [com.zzg]
+ * @author ailikes
+ * @version 1.0.0
  */
 public class ColumnEntity {
 

@@ -3,7 +3,7 @@ package com.ailikes.lotus.auth.server.model;
 import java.io.Serializable;
 import java.util.Date;
 /**
- * @Author: ailikes
+ * @author ailikes
  * @Date: [2018-08-23 12:07]
  * @Description: [ ]
  * @Version: [1.0.0]

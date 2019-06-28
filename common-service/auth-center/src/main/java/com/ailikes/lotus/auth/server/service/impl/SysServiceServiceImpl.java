@@ -18,11 +18,8 @@ import com.ailikes.lotus.auth.server.service.SysServiceService;
 
 
 /**
- * @Author: [gitgeek]
- * @Date: [2018-08-23 15:18]
- * @Description: [ ]
- * @Version: [1.0.0]
- * @Copy: [com.zzg]
+ * @author ailikes
+ * @version 1.0.0
  */
 
 @Service

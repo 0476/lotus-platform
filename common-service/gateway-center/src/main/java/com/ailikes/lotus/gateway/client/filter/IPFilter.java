@@ -24,7 +24,8 @@ package com.ailikes.lotus.gateway.client.filter;
 ///**
 // * IP过滤器
 // * 
-// * @author owen 624191343@qq.com
+// * @author ailikes
+// * @version 1.0.0
 // *
 // *         2017年10月14日
 // */

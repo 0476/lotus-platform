@@ -28,7 +28,8 @@
         <module>file-center</module>
         <!-- 代码生成服务中心 -->
         <module>generator-center</module>
-
+        <!-- 后台管理界面 -->
+        <module>admin-web</module>
         <!-- 灰度发布中心 <module>gray-center</module> -->
         <!-- 调优中心 <module>tuning-center</module> -->
         <!-- 监控中心 -->

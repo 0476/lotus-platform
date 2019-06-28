@@ -4,7 +4,7 @@ package com.ailikes.lotus.common.config.util;
 /**
  * 用于数据源切换
  *
- * @author owen
+ * @author ailikes
  * @create 2017年7月2日
  */
 public class DataSourceHolder {

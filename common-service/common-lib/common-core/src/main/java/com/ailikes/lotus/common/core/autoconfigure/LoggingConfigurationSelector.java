@@ -4,7 +4,7 @@ import org.springframework.context.annotation.ImportSelector;
 import org.springframework.core.type.AnnotationMetadata;
 
 /**
- * @author owen
+ * @author ailikes
  * @create 2017年7月2日
  * 装配bean
  */

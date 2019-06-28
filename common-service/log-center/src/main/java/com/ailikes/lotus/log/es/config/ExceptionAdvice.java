@@ -17,7 +17,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 /**
  * 异常通用处理
  *
- * @author zlt
+ * @author ailikes
+ * @version 1.0.0
  */
 @ResponseBody
 public class ExceptionAdvice {

@@ -26,8 +26,8 @@ import io.swagger.annotations.ApiOperation;
 
 /**
  * 角色相关接口
- *
- * @author owen 624191343@qq.com
+ * @author ailikes
+ * @version 1.0.0
  */
 @Api(tags = "应用")
 @RestController

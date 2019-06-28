@@ -17,8 +17,8 @@ import com.ailikes.lotus.auth.server.service.ValidateCodeService;
 
 /**
  * 验证码提供
- * @author zlt
- * @date 2018/12/18
+ * @author ailikes
+ * @version 1.0.0
  */
 @Controller
 public class ValidateCodeController {

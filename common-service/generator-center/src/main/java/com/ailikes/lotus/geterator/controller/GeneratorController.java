@@ -22,11 +22,8 @@ import com.ailikes.lotus.geterator.service.SysGeneratorService;
 import io.swagger.annotations.Api;
 
 /**
- * @Author: [dawei QQ:64738479]
- * @Date: [2019-04-25 21:48]
- * @Description: [ ]
- * @Version: [1.0.1]
- * @Copy: [com.zzg]
+ * @author ailikes
+ * @version 1.0.0
  */
 @RestController
 @Api(tags = "代码生成器")

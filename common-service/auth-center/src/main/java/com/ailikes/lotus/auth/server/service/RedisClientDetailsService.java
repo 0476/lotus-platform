@@ -18,8 +18,9 @@ import org.springframework.util.CollectionUtils;
 import com.alibaba.fastjson.JSONObject;
 
 
-/** 
-* @author owen 624191343@qq.com
+/**
+ * @author ailikes
+ * @version 1.0.0
 * @version 创建时间：2017年11月12日 上午22:57:51
 * 类说明 
 * 将oauth_client_details表数据缓存到redis，这里做个缓存优化

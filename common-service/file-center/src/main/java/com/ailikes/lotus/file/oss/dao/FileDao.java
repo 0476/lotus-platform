@@ -11,7 +11,7 @@ import org.apache.ibatis.annotations.Select;
 import com.ailikes.lotus.file.oss.model.FileInfo;
 
 /**
- * @author 作者 owen E-mail: 624191343@qq.com
+ * @author ailikes
  * @version 创建时间：2017年11月12日 上午22:57:51
  * oss上传存储db
 */

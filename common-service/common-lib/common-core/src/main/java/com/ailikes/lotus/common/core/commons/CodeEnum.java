@@ -1,11 +1,8 @@
 package com.ailikes.lotus.common.core.commons;
 
 /**
- * @Author: [gitgeek]
- * @Date: [2018-08-02 08:50]
- * @Description: [ ]
- * @Version: [1.0.0]
- * @Copy: [com.zzg]
+ * @author ailikes
+ * @version 1.0.0
  */
 public enum CodeEnum {
     SUCCESS(0),
