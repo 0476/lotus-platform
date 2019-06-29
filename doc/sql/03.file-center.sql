@@ -1,12 +1,6 @@
 CREATE DATABASE IF NOT EXISTS `file_center` DEFAULT CHARACTER SET = utf8mb4;
 Use `file_center`;
-
-
 SET FOREIGN_KEY_CHECKS=0;
-
--- ----------------------------
--- Table structure for file_info
--- ----------------------------
 DROP TABLE IF EXISTS `file_info`;
 CREATE TABLE `file_info` (
   `id` varchar(32) NOT NULL COMMENT '文件md5',

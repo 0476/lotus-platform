@@ -7,7 +7,7 @@ services:
       - "1111:1111"
     restart: always
     tty: true
-    container_name: eureka-server
+    container_name: register-center
   #网关中心
   gateway-center:
     image: ailikes/gateway-center:1.0.0

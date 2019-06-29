@@ -10,7 +10,7 @@ spring:
   application:
     name: zipkin-server
   datasource:
-    url: jdbc:mysql://114.67.230.230:3306/zipkin-center?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    url: jdbc:mysql://111.207.248.27:3306/zipkin-center?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
     username: root
     password: jiuaiNI0523
     continueOnError: true

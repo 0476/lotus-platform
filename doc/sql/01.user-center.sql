@@ -1,11 +1,5 @@
-#导出 user-center 的数据库结构
 CREATE DATABASE IF NOT EXISTS `user-center` DEFAULT CHARACTER SET = utf8mb4;
-Use `user-center`;
-
-#
-# Structure for table "sys_menu"
-#
-
+use `user-center`;
 DROP TABLE IF EXISTS `sys_menu`;
 CREATE TABLE `sys_menu` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -22,18 +16,8 @@ CREATE TABLE `sys_menu` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=utf8mb4;
 
-#
-# Data for table "sys_menu"
-#
-
-
-INSERT INTO `sys_menu` (`id`,`parentId`,`name`,`url`,`path`,`css`,`sort`,`createTime`,`updateTime`,`isMenu`,`hidden`) VALUES (2,12,'用户管理','#!user','system/user.html','layui-icon-friends',2,'2017-11-17 16:56:59','2018-09-14 09:06:25',1,0),(3,12,'角色管理','#!role','system/role.html','layui-icon-friends',3,'2017-11-17 16:56:59','2018-09-02 06:12:04',1,0),(4,12,'菜单管理','#!menus','system/menus.html','layui-icon-menu-fill',4,'2017-11-17 16:56:59','2018-09-03 02:23:47',1,0),(5,12,'权限管理','#!permissions','system/permissions.html','layui-icon-password',5,'2017-11-17 16:56:59','2018-09-02 06:12:16',1,0),(7,37,'注册中心','#!register','http://127.0.0.1:1111/','layui-icon-engine',2,'2017-11-17 16:56:59','2019-05-25 20:34:50',1,0),(8,37,'监控中心','#!monitor','http://127.0.0.1:9001/#/wallboard','layui-icon-util',11,'2017-11-17 16:56:59','2019-05-25 20:35:20',1,0),(9,37,'文件中心','#!files','files/files.html','layui-icon-file',10,'2017-11-17 16:56:59','2018-08-25 10:43:33',1,0),(10,37,'文档中心','#!swagger','http://127.0.0.1/swagger-ui.html','layui-icon-app',9,'2017-11-17 16:56:59','2019-03-26 02:32:46',1,0),(11,12,'我的信息','#!myInfo','system/myInfo.html','',10,'2017-11-17 16:56:59','2018-09-02 06:12:24',1,1),(12,-1,'认证中心','javascript:;','','layui-icon-set',1,'2017-11-17 16:56:59','2019-03-26 06:56:46',1,0),(35,12,'应用管理','#!app','attestation/app.html','layui-icon-app',9,'2017-11-17 16:56:59','2018-08-25 10:57:42',1,0),(36,12,'服务管理','#!services','attestation/services.html','layui-icon-website',8,'2017-11-17 16:56:59','2018-09-02 09:34:13',1,0),(37,-1,'系统监控','javascript:;','','layui-icon-set',3,'2018-08-25 10:41:58','2018-08-25 10:41:58',1,0),(40,-1,'任务中心','javascript:;','','layui-icon-set',4,'2018-08-28 16:59:44','2018-08-28 17:00:19',1,0),(41,40,'任务管理','#!jobinfo','http://127.0.0.1:8088/jobinfo','layui-icon-senior',1,'2018-08-28 17:02:00','2018-08-28 18:24:23',1,0),(42,40,'调度日志','#!joblog','http://127.0.0.1:8088/joblog','layui-icon-senior',2,'2018-08-28 18:20:53','2018-08-28 18:24:32',1,0),(43,40,'执行器管理','#!jobgroup','http://127.0.0.1:8088/jobgroup','layui-icon-senior',3,'2018-08-28 18:22:04','2018-09-03 08:05:02',1,0),(44,37,'服务治理','#!eureka','eureka/list.html','layui-icon-engine',1,'2018-08-30 15:30:19','2019-05-25 20:34:40',1,0),(50,37,'代码生成器','#!generator','generator/list.html','layui-icon-app',999,'2018-09-05 13:43:06','2019-05-26 17:01:46',1,0),(52,12,'令牌管理','#!token','attestation/token.html','layui-icon-util',11,'2018-09-08 13:19:56','2019-05-27 09:28:39',1,0),(105,37,'日志中心','#!log','system/log.html','layui-icon-engine',18,'2019-03-11 06:30:01','2019-05-25 20:35:35',1,0),(106,37,'grafana监控','#!grafana','http://127.0.0.1:3000/','layui-icon-engine',77,'2019-03-12 01:18:09','2019-03-26 02:33:00',1,0),(108,37,'prometheus监控','#!prometheus','http://127.0.0.1:9090','layui-icon-engine',1111,'2019-03-27 11:23:31','2019-05-25 21:13:08',1,0);
-INSERT INTO `sys_menu` (`id`,`parentId`,`name`,`url`,`path`,`css`,`sort`,`createTime`,`updateTime`,`isMenu`,`hidden`) VALUES (110,-1,'路由管理','#!route','route/route.html','layui-icon-engine',111111,'2019-06-14 21:28:54','2019-06-14 21:28:54',1,0);
-
-
-#
-# Structure for table "sys_permission"
-#
+INSERT INTO `sys_menu` (`id`,`parentId`,`name`,`url`,`path`,`css`,`sort`,`createTime`,`updateTime`,`isMenu`,`hidden`) VALUES (2,12,'用户管理','-- !user','system/user.html','layui-icon-friends',2,'2017-11-17 16:56:59','2018-09-14 09:06:25',1,0),(3,12,'角色管理','-- !role','system/role.html','layui-icon-friends',3,'2017-11-17 16:56:59','2018-09-02 06:12:04',1,0),(4,12,'菜单管理','-- !menus','system/menus.html','layui-icon-menu-fill',4,'2017-11-17 16:56:59','2018-09-03 02:23:47',1,0),(5,12,'权限管理','-- !permissions','system/permissions.html','layui-icon-password',5,'2017-11-17 16:56:59','2018-09-02 06:12:16',1,0),(7,37,'注册中心','-- !register','http://127.0.0.1:1111/','layui-icon-engine',2,'2017-11-17 16:56:59','2019-05-25 20:34:50',1,0),(8,37,'监控中心','-- !monitor','http://127.0.0.1:9001/-- /wallboard','layui-icon-util',11,'2017-11-17 16:56:59','2019-05-25 20:35:20',1,0),(9,37,'文件中心','-- !files','files/files.html','layui-icon-file',10,'2017-11-17 16:56:59','2018-08-25 10:43:33',1,0),(10,37,'文档中心','-- !swagger','http://127.0.0.1/swagger-ui.html','layui-icon-app',9,'2017-11-17 16:56:59','2019-03-26 02:32:46',1,0),(11,12,'我的信息','-- !myInfo','system/myInfo.html','',10,'2017-11-17 16:56:59','2018-09-02 06:12:24',1,1),(12,-1,'认证中心','javascript:;','','layui-icon-set',1,'2017-11-17 16:56:59','2019-03-26 06:56:46',1,0),(35,12,'应用管理','-- !app','attestation/app.html','layui-icon-app',9,'2017-11-17 16:56:59','2018-08-25 10:57:42',1,0),(36,12,'服务管理','-- !services','attestation/services.html','layui-icon-website',8,'2017-11-17 16:56:59','2018-09-02 09:34:13',1,0),(37,-1,'系统监控','javascript:;','','layui-icon-set',3,'2018-08-25 10:41:58','2018-08-25 10:41:58',1,0),(40,-1,'任务中心','javascript:;','','layui-icon-set',4,'2018-08-28 16:59:44','2018-08-28 17:00:19',1,0),(41,40,'任务管理','-- !jobinfo','http://127.0.0.1:8088/jobinfo','layui-icon-senior',1,'2018-08-28 17:02:00','2018-08-28 18:24:23',1,0),(42,40,'调度日志','-- !joblog','http://127.0.0.1:8088/joblog','layui-icon-senior',2,'2018-08-28 18:20:53','2018-08-28 18:24:32',1,0),(43,40,'执行器管理','-- !jobgroup','http://127.0.0.1:8088/jobgroup','layui-icon-senior',3,'2018-08-28 18:22:04','2018-09-03 08:05:02',1,0),(44,37,'服务治理','-- !eureka','eureka/list.html','layui-icon-engine',1,'2018-08-30 15:30:19','2019-05-25 20:34:40',1,0),(50,37,'代码生成器','-- !generator','generator/list.html','layui-icon-app',999,'2018-09-05 13:43:06','2019-05-26 17:01:46',1,0),(52,12,'令牌管理','-- !token','attestation/token.html','layui-icon-util',11,'2018-09-08 13:19:56','2019-05-27 09:28:39',1,0),(105,37,'日志中心','-- !log','system/log.html','layui-icon-engine',18,'2019-03-11 06:30:01','2019-05-25 20:35:35',1,0),(106,37,'grafana监控','-- !grafana','http://127.0.0.1:3000/','layui-icon-engine',77,'2019-03-12 01:18:09','2019-03-26 02:33:00',1,0),(108,37,'prometheus监控','-- !prometheus','http://127.0.0.1:9090','layui-icon-engine',1111,'2019-03-27 11:23:31','2019-05-25 21:13:08',1,0);
+INSERT INTO `sys_menu` (`id`,`parentId`,`name`,`url`,`path`,`css`,`sort`,`createTime`,`updateTime`,`isMenu`,`hidden`) VALUES (110,-1,'路由管理','-- !route','route/route.html','layui-icon-engine',111111,'2019-06-14 21:28:54','2019-06-14 21:28:54',1,0);
 
 DROP TABLE IF EXISTS `sys_permission`;
 CREATE TABLE `sys_permission` (
@@ -46,9 +30,6 @@ CREATE TABLE `sys_permission` (
   UNIQUE KEY `permission` (`permission`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4;
 
-#
-# Data for table "sys_permission"
-#
 INSERT INTO `sys_permission` VALUES (1, 'permission:post/permissions', '保存权限标识', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
 INSERT INTO `sys_permission` VALUES (2, 'permission:put/permissions', '修改权限标识', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
 INSERT INTO `sys_permission` VALUES (3, 'permission:delete/permissions/{id}', '删除权限标识', '2018-01-18 17:06:39', '2018-01-18 17:06:42');
@@ -88,10 +69,6 @@ INSERT INTO `sys_permission` VALUES (37, 'permission:get/permissions/{roleId}/pe
 INSERT INTO `sys_permission` VALUES (38, 'file:query', '获取文件列表', '2019-05-17 21:34:05', '2019-05-17 21:34:08');
 INSERT INTO `sys_permission` VALUES (39, 'file:del', '删除文件', '2019-05-17 21:36:46', '2019-05-17 21:36:48');
 
-#
-# Structure for table "sys_role"
-#
-
 DROP TABLE IF EXISTS `sys_role`;
 CREATE TABLE `sys_role` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -103,15 +80,8 @@ CREATE TABLE `sys_role` (
   UNIQUE KEY `code` (`code`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
-#
-# Data for table "sys_role"
-#
 
 INSERT INTO `sys_role` VALUES (1,'ADMIN','管理员','2017-11-17 16:56:59','2017-11-17 16:56:59'),(3,'002','普通用户','2019-03-27 02:52:00','2019-03-27 02:52:00');
-
-#
-# Structure for table "sys_role_menu"
-#
 
 DROP TABLE IF EXISTS `sys_role_menu`;
 CREATE TABLE `sys_role_menu` (
@@ -120,15 +90,9 @@ CREATE TABLE `sys_role_menu` (
   PRIMARY KEY (`roleId`,`menuId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-#
-# Data for table "sys_role_menu"
-#
 
 INSERT INTO `sys_role_menu` VALUES (1,2),(1,3),(1,4),(1,5),(1,7),(1,8),(1,9),(1,10),(1,11),(1,12),(1,35),(1,36),(1,37),(1,40),(1,41),(1,42),(1,43),(1,44),(1,50),(1,52),(1,105),(1,106),(1,108),(1,109),(3,2),(3,3),(3,4),(3,5),(3,11),(3,12),(3,35),(3,36),(3,50),(3,52);
 
-#
-# Structure for table "sys_role_permission"
-#
 
 DROP TABLE IF EXISTS `sys_role_permission`;
 CREATE TABLE `sys_role_permission` (
@@ -137,16 +101,10 @@ CREATE TABLE `sys_role_permission` (
   PRIMARY KEY (`roleId`,`permissionId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-#
-# Data for table "sys_role_permission"
-#
 
 INSERT INTO `sys_role_permission` (`roleId`,`permissionId`) VALUES (1,1),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7),(1,8),(1,9),(1,10),(1,11),(1,12),(1,13),(1,14),(1,15),(1,16),(1,17),(1,18),(1,19),(1,20),(1,21),(1,22),(1,23),(1,24),(1,25),(1,26),(1,27),(1,29),(1,30),(1,31),(1,32),(1,33),(1,34),(1,35),(1,36),(1,37),(1,38),(1,39);
 
 
-#
-# Structure for table "sys_role_user"
-#
 
 DROP TABLE IF EXISTS `sys_role_user`;
 CREATE TABLE `sys_role_user` (
@@ -155,15 +113,9 @@ CREATE TABLE `sys_role_user` (
   PRIMARY KEY (`userId`,`roleId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-#
-# Data for table "sys_role_user"
-#
 
 INSERT INTO `sys_role_user` VALUES (1,1),(2,1),(4,1),(7,3),(8,1),(9,1),(10,1),(11,1),(13,1),(14,1),(15,3);
 
-#
-# Structure for table "sys_user"
-#
 
 DROP TABLE IF EXISTS `sys_user`;
 CREATE TABLE `sys_user` (
@@ -182,18 +134,10 @@ CREATE TABLE `sys_user` (
   UNIQUE KEY `username` (`username`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4;
 
-#
-# Data for table "sys_user"
-#
 
 INSERT INTO `sys_user` VALUES (1,'admin','$2a$10$Wtw81uu43fGKw9lkOr1RAOTNWxQIZBsB3YDwc/5yDnr/yeG5x92EG','管理员','http://payo7kq4i.bkt.clouddn.com/耳机.jpg','13106975707',1,1,'BACKEND','2017-11-17 16:56:59','2018-09-15 03:12:44'),(2,'owen','$2a$10$4WkpmB1jHncBCrzJ7hJRq.SsiEFiyE/FdgPF26hLs8vzPyoNpZjta','欧文','http://payo7kq4i.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720180819191900.jpg','18579068166',1,0,'APP','2017-11-17 16:56:59','2018-09-12 06:00:31'),(3,'user','$2a$10$fL/AfD4RDS0LxLJS7zpaZ.YUMfjNWKVvUn7oiA75L1K6PXazSTJPi','体验用户','http://payo7kq4i.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720180819191900.jpg',NULL,1,0,'APP','2017-11-17 16:56:59','2018-09-07 13:38:34'),(4,'test','$2a$10$RD18sHNphJMmcuLuUX/Np.IV/7Ngbjd3Jtj3maFLpwaA6KaHVqPtq','测试账户','http://payo7kq4i.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720180819191900.jpg','13851539156',0,0,'APP','2017-11-17 16:56:59','2018-09-07 03:27:40'),(7,'useruser','$2a$10$Oar0D2I0yRaGocx71mP2zeKJPEec0bddQRrQsXM3ue52NPKrn5KQq','useruser',NULL,'18571111111',1,1,'APP','2018-09-03 09:57:12','2019-03-27 02:52:22'),(8,'abc','$2a$10$RII9blAhenwoFLjL1Y7kNOgq8xqUR/.o6SCDmfPbb6IAnZng/HsKa','abc',NULL,'13322332123',0,0,'APP','2018-09-03 03:32:52','2019-03-27 05:02:43'),(9,'jay','$2a$10$og3NMep2E4sJF90IzoyVre53A37APaNvbXXTJDhcjQkDuTHIe.wvO','jay',NULL,'15151515151',0,1,'APP','2018-09-06 02:30:51','2019-03-27 03:31:07'),(10,'testpre','$2a$10$ep9ukU/DELSKJHb6vbhUC.CJHFMQAgWCuWMAGLr2vZmIt8yar5EAa','testpre',NULL,'17791907897',1,1,'APP','2018-09-07 02:48:44','2019-03-26 07:12:10'),(11,'1','$2a$10$lQ5w8eRYFx4JYfS/zV6OM.IzIRf0rbyevUHFu.xQJtL7Bobc8AuY.','1',NULL,'13530151800',1,1,'APP','2018-09-07 14:20:51','2019-03-26 02:43:17'),(12,'12','$2a$10$cgRGZ0uuIAoKuwBoTWmz7eJzP4RUEr688VlnpZ4BTCz2RZEt0jrIe','12',NULL,'17587132062',0,0,'APP','2018-09-08 04:52:25','2019-03-27 01:25:24'),(13,'abc1','$2a$10$pzvn4TfBh2oFZJbtagovFe56ZTUlTaawPnx0Yz2PeqGex0xbddAGu','abc',NULL,'12345678901',0,0,'APP','2018-09-11 08:02:25','2019-03-26 02:43:11'),(14,'ceshis','$2a$10$wh0d8dn67WXCH6oNeDW3Q.NnJHiVUjEvLBOVUqjA2F/pn7cIpfjLG','ceshis',NULL,'12345643456',0,0,'APP','2018-09-12 13:50:57','2019-03-26 02:43:10'),(15,'w2121','$2a$10$NaUk9I7XfcE5x2hkJHhJF.YxWi/pUM51KTYiP1Y74dh5v70SczcLC','122',NULL,'15854556993',0,0,'APP','2018-09-13 09:35:15','2019-03-27 07:08:09');
 
 
-
-
-#
-# Structure for table "order_seq"
-#
 
 DROP TABLE IF EXISTS `order_seq`;
 CREATE TABLE `order_seq` (
@@ -204,13 +148,9 @@ CREATE TABLE `order_seq` (
   PRIMARY KEY (`seq_name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-#
-# Data for table "order_seq"
-#
 
 INSERT INTO `order_seq` VALUES ('oc_user',1,9999,1);
 
-#
 DROP FUNCTION IF EXISTS `currval`;
 
 CREATE  FUNCTION `currval`(v_seq_name VARCHAR(50)) RETURNS int(11)
@@ -236,9 +176,3 @@ begin
   	
     return currval(v_seq_name);  
 end;
-
- 
-
-## select nextval('oc_user') as end from dual;
-
-## SELECT  CONCAT(DATE_FORMAT(now() ,'%Y%m%d%H%i%s') , nextval('oc_user'))  FROM dual;
