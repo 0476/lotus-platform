@@ -29,7 +29,8 @@
 		<spring-boot.version>2.0.4.RELEASE</spring-boot.version>
 		<spring-cloud-dependencies.version>Finchley.SR2</spring-cloud-dependencies.version>
         <docker.plugin.version>0.4.13</docker.plugin.version>
-        <docker.host>https://111.207.248.41:2376</docker.host>
+        <!--<docker.host>https://111.207.248.41:2376</docker.host>-->
+        <docker.host>https://192.168.103.208:2376</docker.host>
         <docker.image.prefix>ailikes</docker.image.prefix>
         <docker.image.version>1.0.1</docker.image.version>
 		<core.version>1.0.0-SNAPSHOT</core.version>
@@ -166,14 +167,14 @@
                     <configuration>
                         <!--这一部分是为了实现对远程docker容器的控制-->
                         <!--docker主机地址,用于完成docker各项功能,注意是tcp不是http!-->
-                        <!--<dockerHost>${docker.host}</dockerHost>-->
+                        <dockerHost>${docker.host}</dockerHost>
                         <!--docker远程访问所需证书地址,如果docker远程主机没有启用TLS验证则不需要配证书-->
-                        <!--<dockerCertPath>./docker-ssh</dockerCertPath>-->
+                        <dockerCertPath>./doc/docker-ssl</dockerCertPath>
                         <!--这一部分是为了实现docker镜像的构建和推送-->
                         <!--registry地址,用于推送,拉取镜像,我这里用的是阿里的registry-->
-                        <!--<registryUrl>registry.hub.docker.com</registryUrl>-->
+                        <registryUrl>registry.hub.docker.com</registryUrl>
                         <!--认证配置,用于私有registry认证,如果忘记了可以去阿里的registry查看，该配置在maven的setting文件中-->
-                        <!--<serverId>ailikes-docker-registry</serverId>-->
+                        <serverId>ailikes-docker-registry</serverId>
                         <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
                         <imageTags>
                             <imageTag>${docker.image.version}</imageTag>
