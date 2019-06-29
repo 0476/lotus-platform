@@ -32,7 +32,7 @@
         <!--<docker.host>https://111.207.248.41:2376</docker.host>-->
         <docker.host>https://192.168.103.208:2376</docker.host>
         <docker.image.prefix>ailikes</docker.image.prefix>
-        <docker.image.version>1.0.1</docker.image.version>
+        <docker.image.version>1.0.0</docker.image.version>
 		<core.version>1.0.0-SNAPSHOT</core.version>
 	</properties>
 
