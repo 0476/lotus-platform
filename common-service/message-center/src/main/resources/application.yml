@@ -19,7 +19,7 @@ spring:
   datasource:
     druid: 
       # JDBC 配置(驱动类自动从url的mysql识别,数据源类型自动识别)
-      url: jdbc:mysql://111.207.248.27:3306/sms-center?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+      url: jdbc:mysql://111.207.248.47:3306/sms-center?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
       username: root
       password: jiuaiNI0523
       driver-class-name:  com.mysql.jdbc.Driver
@@ -73,7 +73,7 @@ spring:
 ################### mysq end ##########################
   redis:
 ################### redis 单机版 start ########################## 
-    host: 111.207.248.27
+    host: 111.207.248.47
     port: 16379
     timeout: 6000
     database: 2
