@@ -19,7 +19,7 @@ services:
     image: ailikes/auth-center:1.0.0
     ports:
       - "3333:3333"
-    container_name: auth-server
+    container_name: auth-center
   #用户中心
   user-center:
     image: ailikes/user-center:1.0.0
